@@ -1,0 +1,31 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+.sidebar-nav-menu a {
+    @apply transition ease-in-out delay-150 hover:bg-slate-700 duration-300;
+}
+
+.pos-label {
+    @apply uppercase block mb-2 text-sm/4 font-semibold text-gray-700;
+}
+
+.pos-input {
+    @apply min-w-full p-2 bg-transparent border border-slate-200 outline-none rounded-sm shadow-sm caret-slate-900 text-slate-900 placeholder:text-sm focus:border-slate-200 focus:ring-0 transition ease-in-out focus:shadow-slate-500/60 duration-300;
+}
+
+.post-file-input {
+    @apply text-sm min-w-full p-2 bg-transparent border border-slate-200 outline-none rounded-sm shadow-sm focus:ring-0 focus:outline-none file:bg-slate-900 file:text-white file:outline-none file:border-none file:py-1 file:px-2 file:rounded-sm file:cursor-pointer hover:file:bg-slate-800;
+}
+
+.image-input-help {
+   @apply mt-1 text-xs text-gray-500;
+}
+
+.pos-btn {
+    @apply bg-cyan-600 text-white font-bold py-3 px-6 rounded-md transition ease-in-out hover:bg-cyan-700 duration-300;;
+}
+
+.image-display-field {
+    @apply mx-auto px-10 relative top-8;
+}

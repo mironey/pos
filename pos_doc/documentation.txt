@@ -1,0 +1,49 @@
+A. User Authentication
+B. Product Management
+C. Sales Management
+D. Customer Management
+E. Payment Processing
+F. Reporting and Analytics
+G. Settings and Configuration
+H. Real-time Updates
+I. Security and Permissions
+
+<!-- Table Structure -->
+
+A. User Table
+    a. Id
+    b. Name
+    c. Email
+    d. Password
+B. Product Table
+    a. Id
+    b. Name
+    c. Description
+    d. Price 
+    e. Quantity
+C. Categories Table
+    a. Id
+    b. Name
+D. Sales Table
+    a. Id
+    b. User Id (Foreign key refferencing the User table)
+    c. Customer Id (Foreign key refferencing the Customer table)
+    d. Total amount
+    e. Payment method
+    f. Payment Status
+E. Sales Item Table
+    a. Id (primary key)
+    b. Sale id (foreign key referencing the Sales table)
+    c. product_id (foreign key referencing the Products table)
+    d. quantity
+    e. price
+D. Customer Table
+    a. id (primary key)
+    b. name
+    c. email
+    d. phone_number
+E. Payment table
+    a. id (primary key)
+    b. sale_id (foreign key referencing the Sales table)
+    c. amount
+    d. payment_method
